@@ -13305,3 +13305,288 @@
         }
     }
 }
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:28:50.998Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:28:51.020Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:28:51.023Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:57:31.642Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:57:31.663Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T16:57:31.666Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T16:58:56.163Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 404,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/auth/register"
+        },
+        "message": "Route is not found",
+        "data": null,
+        "trace": {
+            "error": "Error: Route is not found\n    at exports.default (D:\\masood\\datawarehousing\\base_server\\src\\handlers\\notFound.ts:7:15)\n    at Layer.handle [as handle_request] (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:646:15\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:265:14)\n    at Function.handle (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:00:32.042Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 404,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/auth/register"
+        },
+        "message": "Route is not found",
+        "data": null,
+        "trace": {
+            "error": "Error: Route is not found\n    at exports.default (D:\\masood\\datawarehousing\\base_server\\src\\handlers\\notFound.ts:7:15)\n    at Layer.handle [as handle_request] (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:646:15\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:265:14)\n    at Function.handle (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:10:34.939Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "\"consent\" is required",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"consent\" is required"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:11:37.107Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "\"name\" is required",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"name\" is required"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:11:56.874Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "\"email\" is required",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"email\" is required"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:12:50.117Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "\"consent\" is required",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"consent\" is required"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:14:06.961Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "Account has been created successfully.",
+        "data": {
+            "success": true,
+            "_id": "6a0602de8bb72feada426805"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:16:31.461Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/login"
+        },
+        "message": "\"email\" is required",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"email\" is required"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-14T17:16:41.099Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 500,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/login"
+        },
+        "message": "secretOrPrivateKey must have a value",
+        "data": null,
+        "trace": {
+            "error": "Error: secretOrPrivateKey must have a value\n    at Object.module.exports [as sign] (D:\\masood\\datawarehousing\\base_server\\node_modules\\jsonwebtoken\\sign.js:111:20)\n    at Object.generateToken (D:\\masood\\datawarehousing\\base_server\\src\\utils\\jwt.ts:5:20)\n    at D:\\masood\\datawarehousing\\base_server\\src\\APIs\\user\\authentication\\authentication.service.ts:147:29\n    at Generator.next (<anonymous>)\n    at fulfilled (D:\\masood\\datawarehousing\\base_server\\src\\APIs\\user\\authentication\\authentication.service.ts:5:58)"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:25:12.773Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:25:12.801Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:25:12.804Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:25:50.644Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/login"
+        },
+        "message": "Login successful",
+        "data": {
+            "success": true,
+            "user": {
+                "_id": "6a0602de8bb72feada426805",
+                "password": "$2b$10$5Cz306nF0.wHqEA2.ONNaOD18YvKBBQLW.WoeJUuT3j4ZktoCjBTS",
+                "lastLoginAt": "2026-05-14T17:25:50.011Z",
+                "updatedAt": "2026-05-14T17:25:50.037Z"
+            },
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTA2MDJkZThiYjcyZmVhZGE0MjY4MDUiLCJpYXQiOjE3Nzg3Nzk1NTAsImV4cCI6MTc3ODc4MzE1MH0.OHOyP_UMloNOZxm_wiq5XPXt-AAzAZ79TFeTJNUbdvs",
+            "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTA2MDJkZThiYjcyZmVhZGE0MjY4MDUiLCJpYXQiOjE3Nzg3Nzk1NTAsImV4cCI6MTgxMDMxNTU1MH0.HkGENV7as6eNVcRBqikWIYnouc0BZhjGPpMRKo9P5tA"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:59:44.562Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:59:44.569Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-14T17:59:44.570Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
