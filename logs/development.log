@@ -13590,3 +13590,275 @@
         "SERVER_URL": "http://localhost:3000"
     }
 }
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:21:11.637Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:21:11.661Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:21:11.664Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-18T10:32:14.018Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "\"phoneNumber\" must be a string",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"phoneNumber\" must be a string"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-18T10:32:40.667Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "test@gmail.com already exists for the user",
+        "data": null,
+        "trace": {
+            "error": "Error: test@gmail.com already exists for the user\n    at D:\\masood\\datawarehousing\\base_server\\src\\APIs\\user\\authentication\\validation\\validations.ts:9:19\n    at Generator.next (<anonymous>)\n    at fulfilled (D:\\masood\\datawarehousing\\base_server\\src\\APIs\\user\\authentication\\validation\\validations.ts:5:58)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-18T10:33:22.105Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 422,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/login"
+        },
+        "message": "\"password\" length must be at least 8 characters long",
+        "data": null,
+        "trace": {
+            "error": "ValidationError: \"password\" length must be at least 8 characters long"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:34:25.553Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": true,
+        "statusCode": 201,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/register"
+        },
+        "message": "Account has been created successfully.",
+        "data": {
+            "success": true,
+            "_id": "6a0aeb3119eb577203ca8b6a"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:36:02.306Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": true,
+        "statusCode": 200,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/v1/login"
+        },
+        "message": "Login successful",
+        "data": {
+            "success": true,
+            "user": {
+                "_id": "6a0aeb3119eb577203ca8b6a",
+                "password": "$2b$10$axyHXhoslhmmC6pGbOvYnum27Ar4c1Sm2rG9mPfx/RuX/eaws.2gS",
+                "lastLoginAt": "2026-05-18T10:36:01.783Z",
+                "updatedAt": "2026-05-18T10:36:01.785Z"
+            },
+            "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTBhZWIzMTE5ZWI1NzcyMDNjYThiNmEiLCJpYXQiOjE3NzkxMDA1NjEsImV4cCI6MTc3OTEwNDE2MX0.ke4ncmu2qWv5XbRMwdWUsuGiOtdPocoZVzFHElDV5lU",
+            "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2YTBhZWIzMTE5ZWI1NzcyMDNjYThiNmEiLCJpYXQiOjE3NzkxMDA1NjEsImV4cCI6MTgxMDYzNjU2MX0._VCoGWGQAEAcN_UoBVS2Ftr_09Q-mwIdDM7yMS_MOyw"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-18T10:38:51.510Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 404,
+        "request": {
+            "ip": "::1",
+            "method": "GET",
+            "url": "/v1/api/auth/login"
+        },
+        "message": "Route is not found",
+        "data": null,
+        "trace": {
+            "error": "Error: Route is not found\n    at exports.default (D:\\masood\\datawarehousing\\base_server\\src\\handlers\\notFound.ts:7:15)\n    at Layer.handle [as handle_request] (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:646:15\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:265:14)\n    at Function.handle (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:47:12)"
+        }
+    }
+}
+{
+    "level": "ERROR",
+    "timestamp": "2026-05-18T10:42:10.613Z",
+    "message": "Controller Response",
+    "meta": {
+        "success": false,
+        "statusCode": 404,
+        "request": {
+            "ip": "::1",
+            "method": "POST",
+            "url": "/api/auth/register"
+        },
+        "message": "Route is not found",
+        "data": null,
+        "trace": {
+            "error": "Error: Route is not found\n    at exports.default (D:\\masood\\datawarehousing\\base_server\\src\\handlers\\notFound.ts:7:15)\n    at Layer.handle [as handle_request] (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:286:9\n    at Function.process_params (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at serveStatic (D:\\masood\\datawarehousing\\base_server\\node_modules\\serve-static\\index.js:75:16)\n    at Layer.handle [as handle_request] (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at D:\\masood\\datawarehousing\\base_server\\node_modules\\express\\lib\\router\\index.js:286:9"
+        }
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:47:55.803Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:47:55.810Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:47:55.811Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:55:27.636Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:55:27.652Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:55:27.653Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:15.233Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:15.242Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:15.244Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:52.406Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:52.418Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:56:52.421Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:57:18.575Z",
+    "message": "Database connection established",
+    "meta": {
+        "CONNECTION_NAME": "base-server-db"
+    }
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:57:18.586Z",
+    "message": "Rate limiter initiated",
+    "meta": {}
+}
+{
+    "level": "INFO",
+    "timestamp": "2026-05-18T10:57:18.587Z",
+    "message": "Application started on port 3000",
+    "meta": {
+        "SERVER_URL": "http://localhost:3000"
+    }
+}
